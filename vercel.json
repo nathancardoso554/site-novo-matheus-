@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "functions": {
+    "api/index.mjs": {
+      "includeFiles": "{server/**,client/**}"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index"
+    }
+  ]
+}
